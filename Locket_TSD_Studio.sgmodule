@@ -3,7 +3,7 @@
 #!author=TSD
 
 [Script]
-locket-diagnostic = type=http-response, pattern=^https:\/\/api\.locketcamera\.com\/.*, script-path=https://raw.githubusercontent.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/locket-tsd-studio/main/locket_diagnostic.js, requires-body=false, timeout=10
+locket-diagnostic = type=http-response, pattern=^https:\/\/api\.locketcamera\.com\/.*, script-path=https://raw.githubusercontent.com/tsd205/locket-tsd-studio/main/locket_diagnostic.js, requires-body=false, timeout=10
 
 [MITM]
 hostname = %APPEND% api.locketcamera.com
