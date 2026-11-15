@@ -1,9 +1,10 @@
-#!name=Locket TSD Studio - Diagnostic
-#!desc=Locket-only safe diagnostics for Photo Booth, stickers, AI and Gold; does not unlock server features.
+
+#!name=Locket TSD Studio
+#!desc=Photo Booth, Stickers, AI and Gold feature adapter
 #!author=TSD
 
 [Script]
-locket-diagnostic = type=http-response, pattern=^https:\/\/api\.locketcamera\.com\/.*, script-path=https://raw.githubusercontent.com/tsd205/locket-tsd-studio/main/locket_diagnostic.js, requires-body=false, timeout=10
+locket-features = type=http-response, pattern=^https:\/\/api\.locketcamera\.com\/.*, script-path=https://raw.githubusercontent.com/tsd205/locket-tsd-studio/main/locket_diagnostic.js, requires-body=true, timeout=15
 
 [MITM]
 hostname = %APPEND% api.locketcamera.com
